@@ -100,9 +100,7 @@ static int load(const char *id,
         goto done;
     }
 
-	//codewalker
-	if(hmi->dso)
-    	hmi->dso = handle;
+    hmi->dso = handle;
 
     /* success */
     status = 0;
